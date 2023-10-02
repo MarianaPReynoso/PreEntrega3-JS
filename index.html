@@ -32,8 +32,10 @@
         <form id="formularioPrestamo" action="">
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Nombre completo</span>
-                <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre y apellido" aria-label="Username" aria-describedby="basic-addon1">
             </div>
+
+            <div id="aviso"></div>
 
             <div class="input-group mb-3" id="solicitarPrestamo">
                 <label class="input-group-text"  for="inputGroupSelect01">¿Desea solicitar un préstamo?</label>
@@ -48,7 +50,7 @@
             <p id="montos"></p>
             <p id="recordatorio"></p>
             <p id="cantCuotas"></p>
-            <button class="btn btn-outline-secondary boton" type="button" id="button-addon1">Aceptar</button>
+            <button class="btn btn-outline-secondary boton" type="submit" id="button-addon1">Aceptar</button>
         </form>
         
         <div id="tipoPrestamo" class="input-group mb-3 divFormulario">
