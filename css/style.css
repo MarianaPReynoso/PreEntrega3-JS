@@ -30,11 +30,38 @@ main{
     margin-top: 20px;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form p {
+    margin-bottom: 0;
+}
+
+.formulario{
+    width: 500px;
+    margin: 10px;
+}
+
+.parrafo{
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .divFormulario{
+    width: 500px;
+    margin: 10px;
     display: none;
 }
 
 .boton{
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

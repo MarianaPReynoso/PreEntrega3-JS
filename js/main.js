@@ -15,7 +15,7 @@ const validarNombre = () => {
     if (nombreCompleto == "") {
         aviso.innerHTML = "Por favor indique su nombre para continuar";
         aviso.className = "text-danger";
-        return false;
+        // return false;
     }
 }
 
@@ -67,7 +67,7 @@ const validarCuotas = () => {
     let valorCuota = cuotaPura + interesPorCuota + interesTnaCuota + interesTeaCuota + interesCfteaCuota;
 
     resultado2.innerHTML = "¡Los datos se enviaron correctamente!";
-    resultado2.className = "text-success";
+    resultado2.className = "text-success parrafo";
 
     alert(`Su préstamo de $${valorPrestamo} será devuelto en ${opcionCuota} cuotas con un interés del ${interesCuota}%. Cada cuota tendrá un valor de $${valorCuota.toFixed(2)}`)
     formularioPrestamo.onsubmit();

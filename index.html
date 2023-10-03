@@ -30,14 +30,14 @@
 
     <main>
         <form id="formularioPrestamo" action="">
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 formulario">
                 <span class="input-group-text" id="basic-addon1">Nombre completo</span>
                 <input type="text" class="form-control" id="nombreCompleto" placeholder="Nombre y apellido" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
             <div id="aviso"></div>
 
-            <div class="input-group mb-3" id="solicitarPrestamo">
+            <div class="input-group mb-3 formulario" id="solicitarPrestamo">
                 <label class="input-group-text"  for="inputGroupSelect01">¿Desea solicitar un préstamo?</label>
                 <select class="form-select" id="opciones">
                     <option value="">Seleccionar</option>
@@ -46,10 +46,10 @@
                 </select>
             </div>
 
-            <p id="tipos"></p>
-            <p id="montos"></p>
-            <p id="recordatorio"></p>
-            <p id="cantCuotas"></p>
+            <p class="formulario" id="tipos"></p>
+            <p class="formulario" id="montos"></p>
+            <p class="parrafo" id="recordatorio"></p>
+            <p class="formulario" id="cantCuotas"></p>
             <button class="btn btn-outline-secondary boton" type="submit" id="button-addon1">Aceptar</button>
         </form>
         
@@ -70,19 +70,18 @@
                 <input type="text" id="saldoPrestamo" class="form-control" aria-label="Amount (to the nearest dollar)">
                 <span class="input-group-text">.00</span>
             </div>
-            <div id="resultado" class="my-3"></div>
+            <div id="resultado" class="my-3 formulario"></div>
         </div>
 
-        <div id="numeroCuotas" class="input-group mb-3 divFormulario">
+        <div id="numeroCuotas" class="input-group mb-3 formulario divFormulario">
             <label class="input-group-text" for="inputGroupSelect02">Indique la cantidad de cuotas (12/24/36)</label>
-            <!-- <input type="text" class="form-control" placeholder="En cuantas cuotas quiere abonar" aria-label="Username" aria-describedby="basic-addon1"> -->
             <select class="form-select" id="opcionCuota" aria-label="Example select with button addon">
                 <option selected>-</option>
                 <option value="12">12</option>
                 <option value="24">24</option>
                 <option value="36">36</option>
             </select>
-            <div id="resultado2" class="my-3"></div>
+            <div id="resultado2" class="my-3 formulario"></div>
         </div>
     </main>
 
