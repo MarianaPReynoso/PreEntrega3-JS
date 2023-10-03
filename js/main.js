@@ -8,24 +8,38 @@ const pidieronPrestamo = [
 
 const ingresonWeb = ["Virginia Castro", "Fernando Arabia", "Marisol Lopez", "José Guzman", "Josefina Perez", "Jimena Galli", "Alma Zulema", "Oliver Gomez"];
 
-const validarNombre = () => {
-    let nombreCompleto = document.getElementById("nombreCompleto").value;
+/* const validarNombre = () => {
+    let nombreCompleto = document.getElementById("nombreCompleto").value;*/
     let aviso = document.getElementById("aviso");
+    /*let formularioPrestamo = document.getElementById("formularioPrestamo");
 
     if (nombreCompleto == "") {
         aviso.innerHTML = "Por favor indique su nombre para continuar";
         aviso.className = "text-danger";
-        // return false;
+        return false;
     }
+
+    formularioPrestamo.input();
 }
 
-document.getElementById("nombreCompleto").addEventListener("input", validarNombre);
+document.getElementById("nombreCompleto").addEventListener("input", validarNombre); */
+
+let solicitarPrestamo = document.getElementById("solicitarPrestamo");
+solicitarPrestamo.onclick = () => {
+    aviso.innerHTML = "Por favor indique su nombre para continuar";
+    aviso.className = "text-danger";
+    return false;
+}; 
 
 document.getElementById("opciones").addEventListener("change", function(e) {
     if(this.value == "1") {
         document.getElementById("tipos").innerHTML = document.getElementById("tipoPrestamo").innerHTML;
         document.getElementById("montos").innerHTML = document.getElementById("montoPrestamo").innerHTML;        
         document.getElementById("cantCuotas").innerHTML = document.getElementById("numeroCuotas").innerHTML;
+    } else if(this.value == "2") {
+        document.getElementById("tipos").style.display = "none";
+        document.getElementById("montos").style.display = "none";
+        document.getElementById("cantCuotas").style.display = "none";
     }
 })
 
