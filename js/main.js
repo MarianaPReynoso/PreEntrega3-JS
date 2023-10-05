@@ -8,28 +8,6 @@ const pidieronPrestamo = [
 
 const ingresonWeb = ["Virginia Castro", "Fernando Arabia", "Marisol Lopez", "José Guzman", "Josefina Perez", "Jimena Galli", "Alma Zulema", "Oliver Gomez"];
 
-/* const validarNombre = () => {
-    let nombreCompleto = document.getElementById("nombreCompleto").value;*/
-    let aviso = document.getElementById("aviso");
-    /*let formularioPrestamo = document.getElementById("formularioPrestamo");
-
-    if (nombreCompleto == "") {
-        aviso.innerHTML = "Por favor indique su nombre para continuar";
-        aviso.className = "text-danger";
-        return false;
-    }
-
-    formularioPrestamo.input();
-}
-
-document.getElementById("nombreCompleto").addEventListener("input", validarNombre); */
-
-let solicitarPrestamo = document.getElementById("solicitarPrestamo");
-solicitarPrestamo.onclick = () => {
-    aviso.innerHTML = "Por favor indique su nombre para continuar";
-    aviso.className = "text-danger";
-    return false;
-}; 
 
 document.getElementById("opciones").addEventListener("change", function(e) {
     if(this.value == "1") {
