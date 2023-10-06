@@ -55,7 +55,7 @@
             <label class="input-group-text" for="inputGroupSelect02">Seleccione el tipo de préstamo</label>
                 <select class="form-select" id="prestamos" onchange="validarMonto()">
                     <option selected>-</option>
-                    <option value="1.000.000">Préstamo Básico (Max: $1.000.000)</option>
+                    <option value="Préstamo Básico">Préstamo Básico (Max: $1.000.000)</option>
                     <option value="Préstamo Medio">Préstamo Medio (Max: $2.000.000)</option>
                     <option value="Préstamo Premium">Préstamo Premium (Max: $3.000.000)</option>
                 </select>
@@ -66,9 +66,8 @@
             <div class="input-group">
                 <span class="input-group-text">Indique el monto $</span>
                 <input type="text" id="saldoPrestamo" class="form-control" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-text">.00</span>
             </div>
-            <div id="resultado" class="my-3 formulario"></div>
+            
         </div>
 
         <div id="numeroCuotas" class="input-group mb-3 formulario divFormulario">

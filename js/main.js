@@ -8,7 +8,6 @@ const pidieronPrestamo = [
 
 const ingresonWeb = ["Virginia Castro", "Fernando Arabia", "Marisol Lopez", "José Guzman", "Josefina Perez", "Jimena Galli", "Alma Zulema", "Oliver Gomez"];
 
-
 document.getElementById("opciones").addEventListener("change", function(e) {
     if(this.value == "1") {
         document.getElementById("tipos").innerHTML = document.getElementById("tipoPrestamo").innerHTML;
@@ -76,3 +75,7 @@ console.log(numeDeCuotas);
 ingresonWeb.forEach(item => {
     console.log(item);
 })
+
+const datosUsuario = {nombre:nombreCompleto.value, prestamo:prestamos.value, cuotas:opcionCuota.value};
+localStorage.setItem("datosUsuario", JSON.stringify(datosUsuario));
+const datosUsuarioLS = JSON.parse(localStorage.getItem("datosUsuario"));
